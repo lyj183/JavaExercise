@@ -6,13 +6,16 @@ package JavaExercise;
  * @Description: Java 数组
  **/
 
+import java.lang.reflect.Array;
 import java.util.*;
 import java.io.*;
 
 public class JavaArrayTest {
     //    Java 实例 - 数组排序\元素查找\添加元素\获取数组长度\数组反转
+
     public static void main(String[] args) {
         int array[] = {2, 5, -2, 6, -3, 8, 0, -7, -9, 4};
+        printArray("数组为：", array);
         Arrays.sort(array);                                              // Arrays.sort() 排序
         printArray("1.数组排序结果为", array);
         int index1 = Arrays.binarySearch(array, 2);
@@ -67,6 +70,7 @@ public class JavaArrayTest {
     // src:源数组；	srcPos:源数组要复制的起始位置；
     // dest:目的数组；	destPos:目的数组放置的起始位置；	length:复制的长度。
 
+
     //    Java 实例 - 数组获取最大最小值
 /*
     public static void main(String[] args) {
@@ -77,6 +81,7 @@ public class JavaArrayTest {
         System.out.println("最大值：" + max);
     }
 */
+
 
     //    Java 实例 - 数组合并
 /*
